@@ -1,0 +1,36 @@
+.main{
+  height: 210px;
+  background-color:white;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  
+}
+.menu1{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .menu1 a{
+    text-decoration: none;
+    color:rgb(8, 7, 7);
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+  }
+  .menu1 a:before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    width: 0%;
+    height: 2px;
+    background-color:black;
+    transition: all 0.5s linear;
+  
+  }
+  .menu1 a:hover::before{
+    width: 100%;
+    background-color: blue;
+  }
